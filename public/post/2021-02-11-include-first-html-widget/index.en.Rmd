@@ -1,17 +1,18 @@
 ---
-title: Include First HTML Widget
+title: Leaflet HTML Widget Embed in Blogdown
 author: Rob Wiederstein
 date: '2021-02-11'
 slug: []
 categories:
   - R
 tags:
-  - html widget
+  - htmlwidget
+  - widgetframe
 lastmod: '2021-02-11T20:06:56-06:00'
 keywords: []
 description: ''
 comment: no
-toc: no
+toc: yes
 autoCollapseToc: no
 postMetaInFooter: no
 hiddenFromHomePage: no
@@ -27,21 +28,51 @@ flowchartDiagrams:
 sequenceDiagrams:
   enable: no
   options: ''
+output:
+  blogdown::html_page:
+    toc: true
 ---
+
+One of the continuing frustrations in programming is the large volume of information that is required to achieve seemingly simple things.  For example, the casual reader does not grasp the technical requirements of embedding a map. That's where html widgets come into play.
 
 # html widgets
 
-There are a large number of JavaScript libraries for much richer data visualization. These libraries can be used to build interactive applications that can easily render in web browsers, so users do not need to install any additional software packages to view the visualizations. One way to bring these JavaScript libraries into R is through the htmlwidgets package.
+The boundary between `R` and webpages is blurry.  A map, for example, can be easily displayed in the Rstudio viewer, but taking the same visual to a webpage with a url address can be overwhelming. A reader is both entertained and enlightened when permitted to interact with the data through sliders and filters. Does one really need to learn javascript to accomplish these things?
 
+The answer is sort of.  Today's programmer must understand, and likely knows, that javascript is so much of the interactive graphs and charts on the web.  The rise of `D3` as the default in charting language is proof.  
+For those of us who would prefer the safety of a familiar languge like `R`, the workaround is html widgets.  
 
+`Rmd` allows for it and is one of the primary reasons that learning `blogdown` is a necessity.  It allows a programmer to stay in the `R` language while embedding interactive charts in a webpage. The decisions to invest the time and energy into `blogdown` and `hugo` hinges on whether an html widget can be successfully deployed in a webpage. To see examples of html widgets, see [htmlwidgets for R](http://www.htmlwidgets.org).
 
-```{r data-table-widget-example}
-library(htmlwidgets)
-library(leaflet)
-library(widgetframe)
-l <- leaflet() %>% addTiles()
-htmlwidgets::saveWidget(frameableWidget(l),'leaflet.html')
+# Load the libraries
+
+Let's start with a simple leaflet map.  First, we load the necessary libraries.
+
+```{r load-libraries-quiet, include = F}
+my.pkgs <- c("leaflet", "widgetframe", "htmlwidgets", "magrittr")
+lapply(my.pkgs, function(x) suppressPackageStartupMessages(library(x, character.only = T)))
 ```
 
+```{r load-libraries, eval=F}
+my.pkgs <- c("leaflet", "widgetframe", "htmlwidgets", "magrittr")
+lapply(my.pkgs, function(x) suppressPackageStartupMessages(library(x, character.only = T)))
+```
+
+# Plot the map
+
+The map wouldn't render on early efforts; however, the discovery of the `widgetframe` package made it possible.  The early starts showed the box embedded on the page, but it would not load the data.  This very topic was covered in the blogdown book so make sure to take a look in the appendixes. Also, Xie recommends not embedding multiple widgets on a single page due to conflicts in javascript.
+
+
+
+```{r leaflet-widget}
+# https://bhaskarvk.github.io/widgetframe/
+#wrap widget in <iframe> tags
+m <- leaflet() %>% 
+  addTiles() %>% 
+  fitBounds(0, 40, 10, 50) %>%
+  # move the center to Evansville
+  setView(-87.569908, 37.975712, zoom = 15)
+frameWidget(m)
+```
 
 

@@ -46,13 +46,13 @@
     </item>
     
     <item>
-      <title>Include First HTML Widget</title>
+      <title>Leaflet HTML Widget Embed</title>
       <link>http://localhost:1313/post/2021-02-11-include-first-html-widget/</link>
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2021-02-11-include-first-html-widget/</guid>
-      <description>html widgets There are a large number of JavaScript libraries for much richer data visualization. These libraries can be used to build interactive applications that can easily render in web browsers, so users do not need to install any additional software packages to view the visualizations. One way to bring these JavaScript libraries into R is through the htmlwidgets package.
-library(htmlwidgets) library(leaflet) library(widgetframe) l &amp;lt;- leaflet() %&amp;gt;% addTiles() htmlwidgets::saveWidget(frameableWidget(l),&amp;#39;leaflet.</description>
+      <description>One of the continuing frustrations in programming is the large volume of information that is required to achieve seemingly simple things. For example, the casual reader does not grasp the technical requirements of embedding a map. That’s where html widgets come into play.
+html widgets The boundary between R and webpages is blurry. A map, for example, can be easily displayed in the Rstudio viewer, but taking the same visual to a webpage with a url address can be overwhelming.</description>
     </item>
     
     <item>

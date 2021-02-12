@@ -51,7 +51,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/html-widget/</loc>
+    <loc>http://localhost:1313/tags/htmlwidget/</loc>
     <lastmod>2021-02-11T20:06:56-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -116,6 +116,13 @@
   <url>
     <loc>http://localhost:1313/post/2021-02-11-ten-things-to-remember-with-blogdown/</loc>
     <lastmod>2021-02-11T15:00:25-06:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/widgetframe/</loc>
+    <lastmod>2021-02-11T20:06:56-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

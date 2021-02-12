@@ -18,11 +18,11 @@
     </item>
     
     <item>
-      <title>html widget</title>
-      <link>http://localhost:1313/tags/html-widget/</link>
+      <title>htmlwidget</title>
+      <link>http://localhost:1313/tags/htmlwidget/</link>
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/html-widget/</guid>
+      <guid>http://localhost:1313/tags/htmlwidget/</guid>
       <description></description>
     </item>
     
@@ -41,6 +41,15 @@
       <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/igraph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>widgetframe</title>
+      <link>http://localhost:1313/tags/widgetframe/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/widgetframe/</guid>
       <description></description>
     </item>
     

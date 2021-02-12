@@ -1,5 +1,5 @@
 ---
-title: Leaflet HTML Widget Embed
+title: Leaflet HTML Widget Embed in Blogdown
 author: Rob Wiederstein
 date: '2021-02-11'
 slug: []
@@ -10,9 +10,9 @@ tags:
   - widgetframe
 lastmod: '2021-02-11T20:06:56-06:00'
 keywords: []
-description: 'One of the continuing frustrations in programming is the large volume of information that is required to achieve seemingly simple things.  For example, the casual reader does not grasp the technical requirements of embedding a map. That is where html widgets come into play.'
+description: ''
 comment: no
-toc: no
+toc: yes
 autoCollapseToc: no
 postMetaInFooter: no
 hiddenFromHomePage: no
@@ -28,6 +28,9 @@ flowchartDiagrams:
 sequenceDiagrams:
   enable: no
   options: ''
+output:
+  blogdown::html_page:
+    toc: true
 ---
 
 <script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
@@ -36,10 +39,14 @@ sequenceDiagrams:
 <script src="{{< blogdown/postref >}}index.en_files/widgetframe-binding/widgetframe.js"></script>
 
 <div id="TOC">
-
+<ul>
+<li><a href="#html-widgets">html widgets</a></li>
+<li><a href="#load-the-libraries">Load the libraries</a></li>
+<li><a href="#plot-the-map">Plot the map</a></li>
+</ul>
 </div>
 
-<p>One of the continuing frustrations in programming is the large volume of information that is required to achieve seemingly simple things. For example, the casual reader does not grasp the technical requirements of embedding a map. That’s where html widgets come into play.</p>
+<p>One of the continuing annoyances in programming is the large volume of information that is required to achieve seemingly simple things. For example, the casual reader does not grasp the technical requirements of embedding a map. That’s where html widgets come into play.</p>
 <div id="html-widgets" class="section level1">
 <h1>html widgets</h1>
 <p>The boundary between <code>R</code> and webpages is blurry. A map, for example, can be easily displayed in the Rstudio viewer, but taking the same visual to a webpage with a url address can be overwhelming. A reader is both entertained and enlightened when permitted to interact with the data through sliders and filters. Does one really need to learn javascript to accomplish these things?</p>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Include First HTML Widget - Closer to Reality -- A blog about data</title>
+  <title>Leaflet HTML Widget Embed - Closer to Reality -- A blog about data</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,8 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Rob Wiederstein" /><meta name="description" content="html widgets There are a large number of JavaScript libraries for much richer data visualization. These libraries can be used to build interactive applications that can easily render in web browsers, so users do not need to install any additional software packages to view the visualizations. One way to bring these JavaScript libraries into R is through the htmlwidgets package.
-library(htmlwidgets) library(leaflet) library(widgetframe) l &amp;lt;- leaflet() %&amp;gt;% addTiles() htmlwidgets::saveWidget(frameableWidget(l),&amp;#39;leaflet." /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Rob Wiederstein" /><meta name="description" content="One of the continuing frustrations in programming is the large volume of information that is required to achieve seemingly simple things.  For example, the casual reader does not grasp the technical requirements of embedding a map. That is where html widgets come into play." /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,27 +39,24 @@ library(htmlwidgets) library(leaflet) library(widgetframe) l &amp;lt;- leaflet()
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Include First HTML Widget" />
-<meta property="og:description" content="html widgets There are a large number of JavaScript libraries for much richer data visualization. These libraries can be used to build interactive applications that can easily render in web browsers, so users do not need to install any additional software packages to view the visualizations. One way to bring these JavaScript libraries into R is through the htmlwidgets package.
-library(htmlwidgets) library(leaflet) library(widgetframe) l &lt;- leaflet() %&gt;% addTiles() htmlwidgets::saveWidget(frameableWidget(l),&#39;leaflet." />
+<meta property="og:title" content="Leaflet HTML Widget Embed" />
+<meta property="og:description" content="One of the continuing frustrations in programming is the large volume of information that is required to achieve seemingly simple things.  For example, the casual reader does not grasp the technical requirements of embedding a map. That is where html widgets come into play." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/2021-02-11-include-first-html-widget/" />
 <meta property="article:published_time" content="2021-02-11T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-02-11T20:06:56-06:00" />
-<meta itemprop="name" content="Include First HTML Widget">
-<meta itemprop="description" content="html widgets There are a large number of JavaScript libraries for much richer data visualization. These libraries can be used to build interactive applications that can easily render in web browsers, so users do not need to install any additional software packages to view the visualizations. One way to bring these JavaScript libraries into R is through the htmlwidgets package.
-library(htmlwidgets) library(leaflet) library(widgetframe) l &lt;- leaflet() %&gt;% addTiles() htmlwidgets::saveWidget(frameableWidget(l),&#39;leaflet.">
+<meta itemprop="name" content="Leaflet HTML Widget Embed">
+<meta itemprop="description" content="One of the continuing frustrations in programming is the large volume of information that is required to achieve seemingly simple things.  For example, the casual reader does not grasp the technical requirements of embedding a map. That is where html widgets come into play.">
 <meta itemprop="datePublished" content="2021-02-11T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-02-11T20:06:56-06:00" />
-<meta itemprop="wordCount" content="69">
+<meta itemprop="wordCount" content="367">
 
 
 
-<meta itemprop="keywords" content="html widget," />
+<meta itemprop="keywords" content="htmlwidget,widgetframe," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Include First HTML Widget"/>
-<meta name="twitter:description" content="html widgets There are a large number of JavaScript libraries for much richer data visualization. These libraries can be used to build interactive applications that can easily render in web browsers, so users do not need to install any additional software packages to view the visualizations. One way to bring these JavaScript libraries into R is through the htmlwidgets package.
-library(htmlwidgets) library(leaflet) library(widgetframe) l &lt;- leaflet() %&gt;% addTiles() htmlwidgets::saveWidget(frameableWidget(l),&#39;leaflet."/>
+<meta name="twitter:title" content="Leaflet HTML Widget Embed"/>
+<meta name="twitter:description" content="One of the continuing frustrations in programming is the large volume of information that is required to achieve seemingly simple things.  For example, the casual reader does not grasp the technical requirements of embedding a map. That is where html widgets come into play."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -145,7 +141,7 @@ library(htmlwidgets) library(leaflet) library(widgetframe) l &lt;- leaflet() %&g
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Include First HTML Widget</h1>
+      <h1 class="post-title">Leaflet HTML Widget Embed</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2021-02-11 </span>
@@ -160,19 +156,41 @@ library(htmlwidgets) library(leaflet) library(widgetframe) l &lt;- leaflet() %&g
     <div class="post-content">
       
 <script src="http://localhost:1313/post/2021-02-11-include-first-html-widget/index.en_files/header-attrs/header-attrs.js"></script>
+<script src="http://localhost:1313/post/2021-02-11-include-first-html-widget/index.en_files/htmlwidgets/htmlwidgets.js"></script>
+<script src="http://localhost:1313/post/2021-02-11-include-first-html-widget/index.en_files/pymjs/pym.v1.js"></script>
+<script src="http://localhost:1313/post/2021-02-11-include-first-html-widget/index.en_files/widgetframe-binding/widgetframe.js"></script>
 
 <div id="TOC">
 
 </div>
 
+<p>One of the continuing frustrations in programming is the large volume of information that is required to achieve seemingly simple things. For example, the casual reader does not grasp the technical requirements of embedding a map. That’s where html widgets come into play.</p>
 <div id="html-widgets" class="section level1">
 <h1>html widgets</h1>
-<p>There are a large number of JavaScript libraries for much richer data visualization. These libraries can be used to build interactive applications that can easily render in web browsers, so users do not need to install any additional software packages to view the visualizations. One way to bring these JavaScript libraries into R is through the htmlwidgets package.</p>
-<pre class="r"><code>library(htmlwidgets)
-library(leaflet)
-library(widgetframe)
-l &lt;- leaflet() %&gt;% addTiles()
-htmlwidgets::saveWidget(frameableWidget(l),&#39;leaflet.html&#39;)</code></pre>
+<p>The boundary between <code>R</code> and webpages is blurry. A map, for example, can be easily displayed in the Rstudio viewer, but taking the same visual to a webpage with a url address can be overwhelming. A reader is both entertained and enlightened when permitted to interact with the data through sliders and filters. Does one really need to learn javascript to accomplish these things?</p>
+<p>The answer is sort of. Today’s programmer must understand, and likely knows, that javascript is so much of the interactive graphs and charts on the web. The rise of <code>D3</code> as the default in charting language is proof.<br />
+For those of us who would prefer the safety of a familiar languge like <code>R</code>, the workaround is html widgets.</p>
+<p><code>Rmd</code> allows for it and is one of the primary reasons that learning <code>blogdown</code> is a necessity. It allows a programmer to stay in the <code>R</code> language while embedding interactive charts in a webpage. The decisions to invest the time and energy into <code>blogdown</code> and <code>hugo</code> hinges on whether an html widget can be successfully deployed in a webpage. To see examples of html widgets, see <a href="http://www.htmlwidgets.org">htmlwidgets for R</a>.</p>
+</div>
+<div id="load-the-libraries" class="section level1">
+<h1>Load the libraries</h1>
+<p>Let’s start with a simple leaflet map. First, we load the necessary libraries.</p>
+<pre class="r"><code>my.pkgs &lt;- c(&quot;leaflet&quot;, &quot;widgetframe&quot;, &quot;htmlwidgets&quot;, &quot;magrittr&quot;)
+lapply(my.pkgs, function(x) suppressPackageStartupMessages(library(x, character.only = T)))</code></pre>
+</div>
+<div id="plot-the-map" class="section level1">
+<h1>Plot the map</h1>
+<p>The map wouldn’t render on early efforts; however, the discovery of the <code>widgetframe</code> package made it possible. The early starts showed the box embedded on the page, but it would not load the data. This very topic was covered in the blogdown book so make sure to take a look in the appendixes. Also, Xie recommends not embedding multiple widgets on a single page due to conflicts in javascript.</p>
+<pre class="r"><code># https://bhaskarvk.github.io/widgetframe/
+#wrap widget in &lt;iframe&gt; tags
+m &lt;- leaflet() %&gt;% 
+  addTiles() %&gt;% 
+  fitBounds(0, 40, 10, 50) %&gt;%
+  # move the center to Evansville
+  setView(-87.569908, 37.975712, zoom = 15)
+frameWidget(m)</code></pre>
+<div id="htmlwidget-1" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"url":"index.en_files/figure-html//widgets/widget_leaflet-widget.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 
     </div>
@@ -180,7 +198,8 @@ htmlwidgets::saveWidget(frameableWidget(l),&#39;leaflet.html&#39;)</code></pre>
     
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/html-widget/">html widget</a>
+          <a href="/tags/htmlwidget/">htmlwidget</a>
+          <a href="/tags/widgetframe/">widgetframe</a>
           </div>
       <nav class="post-nav">
         <a class="prev" href="/post/even-preview/">
