@@ -1,5 +1,5 @@
 ---
-title: Leaflet HTML Widget Embed
+title: Leaflet HTML Widget Embed in Blogdown
 author: Rob Wiederstein
 date: '2021-02-11'
 slug: []
@@ -12,7 +12,7 @@ lastmod: '2021-02-11T20:06:56-06:00'
 keywords: []
 description: 'One of the continuing frustrations in programming is the large volume of information that is required to achieve seemingly simple things.  For example, the casual reader does not grasp the technical requirements of embedding a map. That is where html widgets come into play.'
 comment: no
-toc: no
+toc: yes
 autoCollapseToc: no
 postMetaInFooter: no
 hiddenFromHomePage: no
@@ -28,6 +28,9 @@ flowchartDiagrams:
 sequenceDiagrams:
   enable: no
   options: ''
+output:
+  blogdown::html_page:
+    toc: true
 ---
 
 One of the continuing frustrations in programming is the large volume of information that is required to achieve seemingly simple things.  For example, the casual reader does not grasp the technical requirements of embedding a map. That's where html widgets come into play.
