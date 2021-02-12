@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stringr on Closer to Reality -- A blog about data</title>
+    <link>http://localhost:1313/tags/stringr/</link>
+    <description>Recent content in stringr on Closer to Reality -- A blog about data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>2021</copyright>
+    <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/stringr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>splitting strings with stringr</title>
+      <link>http://localhost:1313/post/2021-02-10-splitting-strings-with-stringr/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-10-splitting-strings-with-stringr/</guid>
+      <description>   Intro library(stringr) We have to split strings a lot. I did it today.
+ Stringr The stringr package is helpful because all of the functions start with “str_” and then Rstudio will autocomplete it for you.
+ Here is an example my_string_1 &amp;lt;- &amp;quot;2020-01-01-my-first-blog-post.md&amp;quot;  split it string_1 &amp;lt;- str_sub(my_string_1, start = 1, end = 10) string_1 ## [1] &amp;quot;2020-01-01&amp;quot;  conclusion That was easy.
+ </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+---
+title: Include First HTML Widget
+author: Rob Wiederstein
+date: '2021-02-11'
+slug: []
+categories:
+  - R
+tags:
+  - html widget
+lastmod: '2021-02-11T20:06:56-06:00'
+keywords: []
+description: ''
+comment: no
+toc: no
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+---
+
+# html widgets
+
+There are a large number of JavaScript libraries for much richer data visualization. These libraries can be used to build interactive applications that can easily render in web browsers, so users do not need to install any additional software packages to view the visualizations. One way to bring these JavaScript libraries into R is through the htmlwidgets package.
+
+
+
+```{r data-table-widget-example}
+library(htmlwidgets)
+library(leaflet)
+library(widgetframe)
+l <- leaflet() %>% addTiles()
+htmlwidgets::saveWidget(frameableWidget(l),'leaflet.html')
+```
+
+
+

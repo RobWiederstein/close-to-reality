@@ -1,0 +1,239 @@
+---
+title: A Plot of Mtcars
+author: Rob Wiederstein
+date: '2021-02-10'
+slug: []
+categories:
+  - R
+tags:
+  - shapefiles
+lastmod: '2021-02-10T19:47:20-06:00'
+keywords: ''
+description: ''
+comment: no
+toc: no
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+<script src="{{< blogdown/postref >}}index.en_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index.en_files/lightable/lightable.css" rel="stylesheet" />
+
+<div id="TOC">
+<ul>
+<li><a href="#load-libraries">Load libraries</a></li>
+<li><a href="#build-a-table">Build a table</a></li>
+<li><a href="#make-a-plot">Make a plot</a></li>
+</ul>
+</div>
+
+<p>The greatest challenge is starting. The <code>mtcars</code> dataset is the default for demonstrating both code and plots.</p>
+<div id="load-libraries" class="section level1">
+<h1>Load libraries</h1>
+<p>Any project should begin with the loading of the necessary tools. Code block output is often messy with libraries in that warning messages regarding conflicts in the namespace are verbose.</p>
+<pre class="r"><code>x &lt;- c(&quot;dplyr&quot;, &quot;magrittr&quot;, &quot;kableExtra&quot;, &quot;ggplot2&quot;)
+lapply(x, library, character.only = T)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre><code>## 
+## Attaching package: &#39;kableExtra&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:dplyr&#39;:
+## 
+##     group_rows</code></pre>
+<pre><code>## [[1]]
+## [1] &quot;dplyr&quot;     &quot;stats&quot;     &quot;graphics&quot;  &quot;grDevices&quot; &quot;utils&quot;     &quot;datasets&quot; 
+## [7] &quot;methods&quot;   &quot;base&quot;     
+## 
+## [[2]]
+## [1] &quot;magrittr&quot;  &quot;dplyr&quot;     &quot;stats&quot;     &quot;graphics&quot;  &quot;grDevices&quot; &quot;utils&quot;    
+## [7] &quot;datasets&quot;  &quot;methods&quot;   &quot;base&quot;     
+## 
+## [[3]]
+##  [1] &quot;kableExtra&quot; &quot;magrittr&quot;   &quot;dplyr&quot;      &quot;stats&quot;      &quot;graphics&quot;  
+##  [6] &quot;grDevices&quot;  &quot;utils&quot;      &quot;datasets&quot;   &quot;methods&quot;    &quot;base&quot;      
+## 
+## [[4]]
+##  [1] &quot;ggplot2&quot;    &quot;kableExtra&quot; &quot;magrittr&quot;   &quot;dplyr&quot;      &quot;stats&quot;     
+##  [6] &quot;graphics&quot;   &quot;grDevices&quot;  &quot;utils&quot;      &quot;datasets&quot;   &quot;methods&quot;   
+## [11] &quot;base&quot;</code></pre>
+</div>
+<div id="build-a-table" class="section level1">
+<h1>Build a table</h1>
+<pre class="r"><code>data(mtcars)
+mtcars$model &lt;- row.names(mtcars)
+rownames(mtcars) &lt;- NULL
+dplyr::filter(mtcars, cyl == 4) %&gt;%
+  select(model, mpg, cyl) %&gt;%
+  arrange(-mpg) %&gt;%
+  kableExtra::kbl()</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+model
+</th>
+<th style="text-align:right;">
+mpg
+</th>
+<th style="text-align:right;">
+cyl
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Toyota Corolla
+</td>
+<td style="text-align:right;">
+33.9
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fiat 128
+</td>
+<td style="text-align:right;">
+32.4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Honda Civic
+</td>
+<td style="text-align:right;">
+30.4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Lotus Europa
+</td>
+<td style="text-align:right;">
+30.4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fiat X1-9
+</td>
+<td style="text-align:right;">
+27.3
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Porsche 914-2
+</td>
+<td style="text-align:right;">
+26.0
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Merc 240D
+</td>
+<td style="text-align:right;">
+24.4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Datsun 710
+</td>
+<td style="text-align:right;">
+22.8
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Merc 230
+</td>
+<td style="text-align:right;">
+22.8
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Toyota Corona
+</td>
+<td style="text-align:right;">
+21.5
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Volvo 142E
+</td>
+<td style="text-align:right;">
+21.4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="make-a-plot" class="section level1">
+<h1>Make a plot</h1>
+<pre class="r"><code>mtcars$cyl &lt;- factor(mtcars$cyl)
+p &lt;- ggplot(mtcars, aes(mpg, wt, group = cyl, color = cyl))
+p &lt;- p + geom_point()
+p &lt;- p + ggtitle(&quot;Mtcars&quot;)
+p</code></pre>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/make-plot-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>

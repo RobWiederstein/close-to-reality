@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shapefiles on Closer to Reality -- A blog about data</title>
+    <link>http://localhost:1313/categories/shapefiles/</link>
+    <description>Recent content in shapefiles on Closer to Reality -- A blog about data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>2021</copyright>
+    <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/shapefiles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>foo and Bar</title>
+      <link>http://localhost:1313/post/2021-02-10-foo-and-bar/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-10-foo-and-bar/</guid>
+      <description>We need a dataset.</description>
+    </item>
+    
+  </channel>
+</rss>

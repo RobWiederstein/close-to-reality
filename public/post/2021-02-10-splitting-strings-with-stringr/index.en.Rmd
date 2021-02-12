@@ -1,0 +1,61 @@
+---
+title: splitting strings with stringr
+author: Rob Wiederstein
+date: '2021-02-10'
+slug: []
+categories:
+  - R
+tags:
+  - stringr
+lastmod: '2021-02-10T20:20:46-06:00'
+keywords: []
+description: ''
+comment: no
+toc: yes
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+---
+
+# Intro
+
+```{r load-library}
+library(stringr)
+```
+
+
+We have to split strings a lot.  I did it today.
+
+# `Stringr`
+
+The `stringr` package is helpful because all of the functions start with "str_" and then Rstudio will autocomplete it for you.
+
+# Here is an example
+
+```{r}
+my_string_1 <- "2020-01-01-my-first-blog-post.md"
+```
+
+# split it
+
+```{r}
+string_1 <- str_sub(my_string_1, start = 1, end = 10)
+string_1
+```
+
+# conclusion
+
+That was easy.
+

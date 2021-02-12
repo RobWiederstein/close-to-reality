@@ -1,0 +1,80 @@
+---
+title: Social Networks in R
+author: Rob Wiederstein
+date: '2021-02-11'
+slug: []
+categories:
+  - R
+tags:
+  - igraph
+lastmod: '2021-02-11T08:11:10-06:00'
+keywords: []
+description: ''
+comment: no
+toc: yes
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#karate-dataset">Karate Dataset</a></li>
+<li><a href="#plot-karate-dataset">Plot Karate Dataset</a></li>
+<li><a href="#lessons">Lessons</a></li>
+</ul>
+</div>
+
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet lacus scelerisque quam eleifend ultricies ac eu erat. Vestibulum aliquam eget ante at suscipit. Pellentesque molestie orci sit amet libero maximus, eget malesuada orci pulvinar. Suspendisse sit amet dapibus dui. Aliquam eget risus tellus. Quisque tempor, enim ac pellentesque consectetur, sem massa tincidunt ligula, sit amet vehicula nisi tellus non nibh. Aliquam commodo turpis ante, porttitor ornare augue aliquam eu. Nunc dignissim finibus lorem non bibendum. Pellentesque sed ipsum tincidunt, gravida purus sit amet, sagittis purus.</p>
+<pre class="r"><code>library(igraph)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;igraph&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     decompose, spectrum</code></pre>
+<pre><code>## The following object is masked from &#39;package:base&#39;:
+## 
+##     union</code></pre>
+<pre class="r"><code>library(igraphdata)</code></pre>
+</div>
+<div id="karate-dataset" class="section level1">
+<h1>Karate Dataset</h1>
+<p>Social network between members of a university karate club, led by president John A. and karate instructor Mr. Hi (pseudonyms). The edge weights are the number of common activities the club members took part of.</p>
+<pre class="r"><code>data(karate)</code></pre>
+</div>
+<div id="plot-karate-dataset" class="section level1">
+<h1>Plot Karate Dataset</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet lacus scelerisque quam eleifend ultricies ac eu erat. Vestibulum aliquam eget ante at suscipit. Pellentesque molestie orci sit amet libero maximus, eget malesuada orci pulvinar. Suspendisse sit amet dapibus dui. Aliquam eget risus tellus. Quisque tempor, enim ac pellentesque consectetur, sem massa tincidunt ligula, sit amet vehicula nisi tellus non nibh. Aliquam commodo turpis ante, porttitor ornare augue aliquam eu. Nunc dignissim finibus lorem non bibendum. Pellentesque sed ipsum tincidunt, gravida purus sit amet, sagittis purus.</p>
+<pre class="r"><code>plot.igraph(karate,
+            main = &quot;Karate Club&quot;)</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:karate-plot"></span>
+<img src="{{< blogdown/postref >}}index.en_files/figure-html/karate-plot-1.png" alt="Note A and H." width="90%" />
+<p class="caption">
+Figure 1: Note A and H.
+</p>
+</div>
+</div>
+<div id="lessons" class="section level1">
+<h1>Lessons</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet lacus scelerisque quam eleifend ultricies ac eu erat. Vestibulum aliquam eget ante at suscipit. Pellentesque molestie orci sit amet libero maximus, eget malesuada orci pulvinar. Suspendisse sit amet dapibus dui. Aliquam eget risus tellus. Quisque tempor, enim ac pellentesque consectetur, sem massa tincidunt ligula, sit amet vehicula nisi tellus non nibh. Aliquam commodo turpis ante, porttitor ornare augue aliquam eu. Nunc dignissim finibus lorem non bibendum. Pellentesque sed ipsum tincidunt, gravida purus sit amet, sagittis purus.</p>
+</div>

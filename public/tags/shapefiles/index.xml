@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shapefiles on Closer to Reality -- A blog about data</title>
+    <link>http://localhost:1313/tags/shapefiles/</link>
+    <description>Recent content in shapefiles on Closer to Reality -- A blog about data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>2021</copyright>
+    <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/shapefiles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Plot of Mtcars</title>
+      <link>http://localhost:1313/post/2021-02-10-living-in-paradise/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-10-living-in-paradise/</guid>
+      <description>Load libraries Build a table Make a plot   The greatest challenge is starting. The mtcars dataset is the default for demonstrating both code and plots.
+Load libraries Any project should begin with the loading of the necessary tools. Code block output is often messy with libraries in that warning messages regarding conflicts in the namespace are verbose.
+x &amp;lt;- c(&amp;quot;dplyr&amp;quot;, &amp;quot;magrittr&amp;quot;, &amp;quot;kableExtra&amp;quot;, &amp;quot;ggplot2&amp;quot;) lapply(x, library, character.</description>
+    </item>
+    
+  </channel>
+</rss>

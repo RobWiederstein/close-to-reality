@@ -1,0 +1,56 @@
+---
+title: converting lists to dataframes
+author: Rob Wiederstein
+date: '2021-02-10'
+slug: []
+categories:
+  - R
+tags:
+  - lists
+  - dplyr
+lastmod: '2021-02-10T20:14:33-06:00'
+keywords: []
+description: ''
+comment: no
+toc: no
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+---
+
+# Intro
+
+Lists are tricky.
+
+# Create a list
+
+```{r}
+my.l <- list(a = 1:2, b = 1:3, c = 1:4)
+my.l
+```
+
+# Convert to Dataframe
+
+```{r}
+# convert to df
+
+df <- data.frame(name = names(my.l),
+                 values = unlist(lapply(my.l, "[[", 1)))
+
+df
+```
+# Conclusion
+
+That's how you do it.

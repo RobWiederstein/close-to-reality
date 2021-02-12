@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>igraph on Closer to Reality -- A blog about data</title>
+    <link>http://localhost:1313/tags/igraph/</link>
+    <description>Recent content in igraph on Closer to Reality -- A blog about data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>2021</copyright>
+    <lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/igraph/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Social Networks in R</title>
+      <link>http://localhost:1313/post/2021-02-11-social-networks-in-r/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-11-social-networks-in-r/</guid>
+      <description>Introduction Karate Dataset Plot Karate Dataset Lessons   Introduction Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet lacus scelerisque quam eleifend ultricies ac eu erat. Vestibulum aliquam eget ante at suscipit. Pellentesque molestie orci sit amet libero maximus, eget malesuada orci pulvinar. Suspendisse sit amet dapibus dui. Aliquam eget risus tellus. Quisque tempor, enim ac pellentesque consectetur, sem massa tincidunt ligula, sit amet vehicula nisi tellus non nibh.</description>
+    </item>
+    
+  </channel>
+</rss>

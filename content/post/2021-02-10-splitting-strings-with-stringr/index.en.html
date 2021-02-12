@@ -1,0 +1,60 @@
+---
+title: splitting strings with stringr
+author: Rob Wiederstein
+date: '2021-02-10'
+slug: []
+categories:
+  - R
+tags:
+  - stringr
+lastmod: '2021-02-10T20:20:46-06:00'
+keywords: []
+description: ''
+comment: no
+toc: yes
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+
+</div>
+
+<div id="intro" class="section level1">
+<h1>Intro</h1>
+<pre class="r"><code>library(stringr)</code></pre>
+<p>We have to split strings a lot. I did it today.</p>
+</div>
+<div id="stringr" class="section level1">
+<h1><code>Stringr</code></h1>
+<p>The <code>stringr</code> package is helpful because all of the functions start with “str_” and then Rstudio will autocomplete it for you.</p>
+</div>
+<div id="here-is-an-example" class="section level1">
+<h1>Here is an example</h1>
+<pre class="r"><code>my_string_1 &lt;- &quot;2020-01-01-my-first-blog-post.md&quot;</code></pre>
+</div>
+<div id="split-it" class="section level1">
+<h1>split it</h1>
+<pre class="r"><code>string_1 &lt;- str_sub(my_string_1, start = 1, end = 10)
+string_1</code></pre>
+<pre><code>## [1] &quot;2020-01-01&quot;</code></pre>
+</div>
+<div id="conclusion" class="section level1">
+<h1>conclusion</h1>
+<p>That was easy.</p>
+</div>

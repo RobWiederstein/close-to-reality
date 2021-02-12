@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Closer to Reality -- A blog about data</title>
+    <link>http://localhost:1313/categories/r/</link>
+    <description>Recent content in R on Closer to Reality -- A blog about data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>2021</copyright>
+    <lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Include First HTML Widget</title>
+      <link>http://localhost:1313/post/2021-02-11-include-first-html-widget/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-11-include-first-html-widget/</guid>
+      <description>html widgets There are a large number of JavaScript libraries for much richer data visualization. These libraries can be used to build interactive applications that can easily render in web browsers, so users do not need to install any additional software packages to view the visualizations. One way to bring these JavaScript libraries into R is through the htmlwidgets package.
+library(htmlwidgets) library(leaflet) library(widgetframe) l &amp;lt;- leaflet() %&amp;gt;% addTiles() htmlwidgets::saveWidget(frameableWidget(l),&amp;#39;leaflet.</description>
+    </item>
+    
+    <item>
+      <title>Social Networks in R</title>
+      <link>http://localhost:1313/post/2021-02-11-social-networks-in-r/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-11-social-networks-in-r/</guid>
+      <description>Introduction Karate Dataset Plot Karate Dataset Lessons   Introduction Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet lacus scelerisque quam eleifend ultricies ac eu erat. Vestibulum aliquam eget ante at suscipit. Pellentesque molestie orci sit amet libero maximus, eget malesuada orci pulvinar. Suspendisse sit amet dapibus dui. Aliquam eget risus tellus. Quisque tempor, enim ac pellentesque consectetur, sem massa tincidunt ligula, sit amet vehicula nisi tellus non nibh.</description>
+    </item>
+    
+    <item>
+      <title>Ten Things to Remember with Blogdown</title>
+      <link>http://localhost:1313/post/2021-02-11-ten-things-to-remember-with-blogdown/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-11-ten-things-to-remember-with-blogdown/</guid>
+      <description>Transitioning to hugo is difficult. Blogdown offers the promise of an easy and quick workflow for blogging, however, that is not the case. If you’re not ready for some hard work, then you should probably stay with Wordpress or Squarespace. On the otherhand, if you want to understand the principles that underly much of webpage creation, then stick with blogdown and hugo.
+It’s virtually impossible to give a comprehensive scaffold of how to accomplish that and, even if you could, your time would be better spent reading Yihui Xie, Amber Thomas, Alison Presmanes Hill’s book on blogdown.</description>
+    </item>
+    
+    <item>
+      <title>A Plot of Mtcars</title>
+      <link>http://localhost:1313/post/2021-02-10-living-in-paradise/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-10-living-in-paradise/</guid>
+      <description>Load libraries Build a table Make a plot   The greatest challenge is starting. The mtcars dataset is the default for demonstrating both code and plots.
+Load libraries Any project should begin with the loading of the necessary tools. Code block output is often messy with libraries in that warning messages regarding conflicts in the namespace are verbose.
+x &amp;lt;- c(&amp;quot;dplyr&amp;quot;, &amp;quot;magrittr&amp;quot;, &amp;quot;kableExtra&amp;quot;, &amp;quot;ggplot2&amp;quot;) lapply(x, library, character.</description>
+    </item>
+    
+    <item>
+      <title>converting lists to dataframes</title>
+      <link>http://localhost:1313/post/2021-02-10-converting-lists-to-dataframes/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-10-converting-lists-to-dataframes/</guid>
+      <description>Intro Lists are tricky.
+ Create a list my.l &amp;lt;- list(a = 1:2, b = 1:3, c = 1:4) my.l ## $a ## [1] 1 2 ## ## $b ## [1] 1 2 3 ## ## $c ## [1] 1 2 3 4  Convert to Dataframe # convert to df df &amp;lt;- data.frame(name = names(my.l), values = unlist(lapply(my.l, &amp;quot;[[&amp;quot;, 1))) df ## name values ## a a 1 ## b b 1 ## c c 1  Conclusion That’s how you do it.</description>
+    </item>
+    
+    <item>
+      <title>splitting strings with stringr</title>
+      <link>http://localhost:1313/post/2021-02-10-splitting-strings-with-stringr/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-10-splitting-strings-with-stringr/</guid>
+      <description>   Intro library(stringr) We have to split strings a lot. I did it today.
+ Stringr The stringr package is helpful because all of the functions start with “str_” and then Rstudio will autocomplete it for you.
+ Here is an example my_string_1 &amp;lt;- &amp;quot;2020-01-01-my-first-blog-post.md&amp;quot;  split it string_1 &amp;lt;- str_sub(my_string_1, start = 1, end = 10) string_1 ## [1] &amp;quot;2020-01-01&amp;quot;  conclusion That was easy.
+ </description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>http://localhost:1313/post/2020-12-01-r-rmarkdown/</link>
+      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      
+      <guid>http://localhost:1313/post/2020-12-01-r-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
+    </item>
+    
+  </channel>
+</rss>

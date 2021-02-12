@@ -1,0 +1,72 @@
+---
+title: converting lists to dataframes
+author: Rob Wiederstein
+date: '2021-02-10'
+slug: []
+categories:
+  - R
+tags:
+  - lists
+  - dplyr
+lastmod: '2021-02-10T20:14:33-06:00'
+keywords: []
+description: ''
+comment: no
+toc: no
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+
+</div>
+
+<div id="intro" class="section level1">
+<h1>Intro</h1>
+<p>Lists are tricky.</p>
+</div>
+<div id="create-a-list" class="section level1">
+<h1>Create a list</h1>
+<pre class="r"><code>my.l &lt;- list(a = 1:2, b = 1:3, c = 1:4)
+my.l</code></pre>
+<pre><code>## $a
+## [1] 1 2
+## 
+## $b
+## [1] 1 2 3
+## 
+## $c
+## [1] 1 2 3 4</code></pre>
+</div>
+<div id="convert-to-dataframe" class="section level1">
+<h1>Convert to Dataframe</h1>
+<pre class="r"><code># convert to df
+
+df &lt;- data.frame(name = names(my.l),
+                 values = unlist(lapply(my.l, &quot;[[&quot;, 1)))
+
+df</code></pre>
+<pre><code>##   name values
+## a    a      1
+## b    b      1
+## c    c      1</code></pre>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>That’s how you do it.</p>
+</div>

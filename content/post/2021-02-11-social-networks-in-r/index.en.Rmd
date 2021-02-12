@@ -1,0 +1,64 @@
+---
+title: Social Networks in R
+author: Rob Wiederstein
+date: '2021-02-11'
+slug: []
+categories:
+  - R
+tags:
+  - igraph
+lastmod: '2021-02-11T08:11:10-06:00'
+keywords: []
+description: ''
+comment: no
+toc: yes
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+# Introduction
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet lacus scelerisque quam eleifend ultricies ac eu erat. Vestibulum aliquam eget ante at suscipit. Pellentesque molestie orci sit amet libero maximus, eget malesuada orci pulvinar. Suspendisse sit amet dapibus dui. Aliquam eget risus tellus. Quisque tempor, enim ac pellentesque consectetur, sem massa tincidunt ligula, sit amet vehicula nisi tellus non nibh. Aliquam commodo turpis ante, porttitor ornare augue aliquam eu. Nunc dignissim finibus lorem non bibendum. Pellentesque sed ipsum tincidunt, gravida purus sit amet, sagittis purus.
+
+```{r load-libraries, warnings = F}
+library(igraph)
+library(igraphdata)
+
+```
+
+# Karate Dataset
+
+Social network between members of a university karate club, led by president John A. and karate instructor Mr. Hi (pseudonyms).  The edge weights are the number of common activities the club members took part of.
+
+```{r load-data}
+data(karate)
+```
+
+# Plot Karate Dataset
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet lacus scelerisque quam eleifend ultricies ac eu erat. Vestibulum aliquam eget ante at suscipit. Pellentesque molestie orci sit amet libero maximus, eget malesuada orci pulvinar. Suspendisse sit amet dapibus dui. Aliquam eget risus tellus. Quisque tempor, enim ac pellentesque consectetur, sem massa tincidunt ligula, sit amet vehicula nisi tellus non nibh. Aliquam commodo turpis ante, porttitor ornare augue aliquam eu. Nunc dignissim finibus lorem non bibendum. Pellentesque sed ipsum tincidunt, gravida purus sit amet, sagittis purus.
+
+```{r karate-plot, fig.cap="Note A and H.", fig.align="center", out.width="90%"}
+plot.igraph(karate,
+            main = "Karate Club")
+```
+
+# Lessons
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet lacus scelerisque quam eleifend ultricies ac eu erat. Vestibulum aliquam eget ante at suscipit. Pellentesque molestie orci sit amet libero maximus, eget malesuada orci pulvinar. Suspendisse sit amet dapibus dui. Aliquam eget risus tellus. Quisque tempor, enim ac pellentesque consectetur, sem massa tincidunt ligula, sit amet vehicula nisi tellus non nibh. Aliquam commodo turpis ante, porttitor ornare augue aliquam eu. Nunc dignissim finibus lorem non bibendum. Pellentesque sed ipsum tincidunt, gravida purus sit amet, sagittis purus.

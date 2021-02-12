@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo-theme on Closer to Reality -- A blog about data</title>
+    <link>http://localhost:1313/tags/hugo-theme/</link>
+    <description>Recent content in hugo-theme on Closer to Reality -- A blog about data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>2021</copyright>
+    <lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo-theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ten Things to Remember with Blogdown</title>
+      <link>http://localhost:1313/post/2021-02-11-ten-things-to-remember-with-blogdown/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-11-ten-things-to-remember-with-blogdown/</guid>
+      <description>Transitioning to hugo is difficult. Blogdown offers the promise of an easy and quick workflow for blogging, however, that is not the case. If you’re not ready for some hard work, then you should probably stay with Wordpress or Squarespace. On the otherhand, if you want to understand the principles that underly much of webpage creation, then stick with blogdown and hugo.
+It’s virtually impossible to give a comprehensive scaffold of how to accomplish that and, even if you could, your time would be better spent reading Yihui Xie, Amber Thomas, Alison Presmanes Hill’s book on blogdown.</description>
+    </item>
+    
+  </channel>
+</rss>
