@@ -2,3 +2,35 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
+// Font family of the site, sans-serif.
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Roboto&display=swap');
+$global-font-family: 'Roboto', 'Montserrat', 'Lato', sans-serif !default;
+// Font family of the site, sans-serif.
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display&family=Roboto+Slab:wght@300&display=swap');
+// Serif font family of the site.
+$global-serif-font-family:  'Roboto Slab', 'Playfair Display', 'Merriweather', serif !default;
+// Font size attribute applied to '<html>' and '<body>'.
+$global-font-size: 22px !default;
+// Text color of the body.
+$global-font-color: #000000 !default;
+// Headings font size of the site.
+$global-headings: (
+  h1: 34px,
+  h2: 30px,
+  h3: 26px,
+  h4: 22px,
+  h5: 18px,
+  h6: 18px
+) !default;
+// Font size of post title.
+$post-title-font-size: 34px !default;
+
+//Logo font
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Shadows+Into+Light&display=swap');
+// Font family of the logo.
+$logo-font-family: 'Dancing Script', cursive !default;
+//code fonts
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Inconsolata&family=Roboto+Mono&display=swap');
+$code-font-family: 'Roboto Mono', 'Courier Prime', 'Inconsolata', monospace !default;
+
+$code-color: #0069c0 !default;
