@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>highlighting on Close to Reality -- A blog about data</title>
+    <link>http://localhost:1313/tags/highlighting/</link>
+    <description>Recent content in highlighting on Close to Reality -- A blog about data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>2021</copyright>
+    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/highlighting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>syntax highlighting in goldmark</title>
+      <link>http://localhost:1313/post/2021-02-13-syntax-highlighting-for-r/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2021-02-13-syntax-highlighting-for-r/</guid>
+      <description>1 2 3 4 5  { &amp;#34;firstName&amp;#34;: &amp;#34;John&amp;#34;, &amp;#34;lastName&amp;#34;: &amp;#34;Smith&amp;#34;, &amp;#34;age&amp;#34;: 25 }   1 2 3 4  #hello world a &amp;lt;- 1 b &amp;lt;- 2 sum(a + b)   1 2 3 4 5 6 7  &amp;lt;body&amp;gt; &amp;lt;div&amp;gt; &amp;lt;p style:&amp;#34;font=12px&amp;#34;&amp;gt; Hello World! &amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/body   1  ls ~/Dropbox   </description>
+    </item>
+    
+  </channel>
+</rss>

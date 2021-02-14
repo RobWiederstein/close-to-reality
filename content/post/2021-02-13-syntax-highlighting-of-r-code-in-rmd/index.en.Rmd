@@ -1,0 +1,44 @@
+---
+title: Syntax Highlighting of R Code in .Rmd
+author: Rob Wiederstein
+date: '2021-02-13'
+slug: []
+categories:
+  - R
+  - Rmd
+tags:
+  - blogdown
+lastmod: '2021-02-13T19:53:49-06:00'
+keywords: []
+description: ''
+comment: no
+toc: no
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+---
+<style type="text/css">
+@import "https://highlightjs.org/static/demo/styles/tomorrow.css";
+</style>
+<!--more-->
+
+```{r hello-world}
+print("hello world")
+```
+
+```{r paste-10}
+paste("a", 1:10, sep = "")
+```
+

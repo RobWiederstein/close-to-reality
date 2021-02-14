@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>[English] Creating a New Theme - Closer to Reality -- A blog about data</title>
+  <title>[English] Creating a New Theme - Close to Reality -- A blog about data</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -36,7 +36,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template." /><m
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.7baa170a9b5b3cc2408b4c8f93d2cd863c814796c6ba49480eae21c6f2c3bd66.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
@@ -161,64 +161,60 @@ We&rsquo;ll start with creating a new site with a very basic template."/>
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#some-definitions">Some Definitions</a>
       <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#some-definitions">Some Definitions</a>
-          <ul>
-            <li><a href="#skins">Skins</a></li>
-            <li><a href="#the-home-page">The Home Page</a></li>
-            <li><a href="#site-configuration-file">Site Configuration File</a></li>
-            <li><a href="#content">Content</a></li>
-            <li><a href="#template-files">Template Files</a></li>
-          </ul>
-        </li>
-        <li><a href="#create-a-new-site">Create a New Site</a>
-          <ul>
-            <li><a href="#generate-the-html-for-the-new-site">Generate the HTML For the New Site</a></li>
-            <li><a href="#test-the-new-site">Test the New Site</a></li>
-          </ul>
-        </li>
-        <li><a href="#create-a-new-theme">Create a New Theme</a>
-          <ul>
-            <li><a href="#create-a-skeleton">Create a Skeleton</a></li>
-            <li><a href="#update-the-configuration-file-to-use-the-theme">Update the Configuration File to Use the Theme</a></li>
-            <li><a href="#generate-the-site">Generate the Site</a></li>
-          </ul>
-        </li>
-        <li><a href="#the-theme-development-cycle">The Theme Development Cycle</a>
-          <ul>
-            <li><a href="#purge-the-public-directory">Purge the public/ Directory</a></li>
-            <li><a href="#hugos-watch-option">Hugo&rsquo;s Watch Option</a></li>
-            <li><a href="#live-reload">Live Reload</a></li>
-            <li><a href="#development-commands">Development Commands</a></li>
-          </ul>
-        </li>
-        <li><a href="#update-the-home-page-template">Update the Home Page Template</a>
-          <ul>
-            <li><a href="#make-a-static-home-page">Make a Static Home Page</a></li>
-            <li><a href="#build-a-dynamic-home-page">Build a &ldquo;Dynamic&rdquo; Home Page</a></li>
-            <li><a href="#list-and-single-templates">List and Single Templates</a></li>
-            <li><a href="#add-content-to-the-homepage">Add Content to the Homepage</a></li>
-            <li><a href="#add-content-to-the-posts">Add Content to the Posts</a></li>
-            <li><a href="#linking-to-content">Linking to Content</a></li>
-            <li><a href="#create-a-post-listing">Create a Post Listing</a></li>
-          </ul>
-        </li>
-        <li><a href="#creating-top-level-pages">Creating Top Level Pages</a></li>
-        <li><a href="#sharing-templates">Sharing Templates</a>
-          <ul>
-            <li><a href="#create-the-header-and-footer-partials">Create the Header and Footer Partials</a></li>
-            <li><a href="#update-the-home-page-template-to-use-the-partials">Update the Home Page Template to Use the Partials</a></li>
-            <li><a href="#update-the-default-single-template-to-use-the-partials">Update the Default Single Template to Use the Partials</a></li>
-          </ul>
-        </li>
-        <li><a href="#add-date-published-to-posts">Add “Date Published” to Posts</a>
-          <ul>
-            <li><a href="#add-date-published-to-the-template">Add “Date Published” to the Template</a></li>
-            <li><a href="#dont-repeat-yourself">Don&rsquo;t Repeat Yourself</a></li>
-          </ul>
-        </li>
+        <li><a href="#skins">Skins</a></li>
+        <li><a href="#the-home-page">The Home Page</a></li>
+        <li><a href="#site-configuration-file">Site Configuration File</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#template-files">Template Files</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-new-site">Create a New Site</a>
+      <ul>
+        <li><a href="#generate-the-html-for-the-new-site">Generate the HTML For the New Site</a></li>
+        <li><a href="#test-the-new-site">Test the New Site</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-new-theme">Create a New Theme</a>
+      <ul>
+        <li><a href="#create-a-skeleton">Create a Skeleton</a></li>
+        <li><a href="#update-the-configuration-file-to-use-the-theme">Update the Configuration File to Use the Theme</a></li>
+        <li><a href="#generate-the-site">Generate the Site</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-theme-development-cycle">The Theme Development Cycle</a>
+      <ul>
+        <li><a href="#purge-the-public-directory">Purge the public/ Directory</a></li>
+        <li><a href="#hugos-watch-option">Hugo&rsquo;s Watch Option</a></li>
+        <li><a href="#live-reload">Live Reload</a></li>
+        <li><a href="#development-commands">Development Commands</a></li>
+      </ul>
+    </li>
+    <li><a href="#update-the-home-page-template">Update the Home Page Template</a>
+      <ul>
+        <li><a href="#make-a-static-home-page">Make a Static Home Page</a></li>
+        <li><a href="#build-a-dynamic-home-page">Build a &ldquo;Dynamic&rdquo; Home Page</a></li>
+        <li><a href="#list-and-single-templates">List and Single Templates</a></li>
+        <li><a href="#add-content-to-the-homepage">Add Content to the Homepage</a></li>
+        <li><a href="#add-content-to-the-posts">Add Content to the Posts</a></li>
+        <li><a href="#linking-to-content">Linking to Content</a></li>
+        <li><a href="#create-a-post-listing">Create a Post Listing</a></li>
+      </ul>
+    </li>
+    <li><a href="#creating-top-level-pages">Creating Top Level Pages</a></li>
+    <li><a href="#sharing-templates">Sharing Templates</a>
+      <ul>
+        <li><a href="#create-the-header-and-footer-partials">Create the Header and Footer Partials</a></li>
+        <li><a href="#update-the-home-page-template-to-use-the-partials">Update the Home Page Template to Use the Partials</a></li>
+        <li><a href="#update-the-default-single-template-to-use-the-partials">Update the Default Single Template to Use the Partials</a></li>
+      </ul>
+    </li>
+    <li><a href="#add-date-published-to-posts">Add “Date Published” to Posts</a>
+      <ul>
+        <li><a href="#add-date-published-to-the-template">Add “Date Published” to the Template</a></li>
+        <li><a href="#dont-repeat-yourself">Don&rsquo;t Repeat Yourself</a></li>
       </ul>
     </li>
   </ul>

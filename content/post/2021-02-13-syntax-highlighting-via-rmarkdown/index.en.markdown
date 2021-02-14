@@ -1,0 +1,59 @@
+---
+title: Syntax Highlighting via Rmarkdown
+author: Rob Wiederstein
+date: '2021-02-13'
+slug: []
+categories:
+  - R
+  - Rmd
+tags:
+  - blogdown
+  - hugo-theme
+lastmod: '2021-02-13T18:20:41-06:00'
+keywords: []
+description: ''
+comment: no
+toc: no
+autoCollapseToc: no
+postMetaInFooter: no
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: no
+mathjaxEnableSingleDollar: no
+mathjaxEnableAutoNumber: no
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
+---
+
+# Sample R code
+
+
+```r
+l <- list(a = 1, b = 2)
+lapply(l, paste, "dog", sep = "-")
+```
+
+```
+## $a
+## [1] "1-dog"
+## 
+## $b
+## [1] "2-dog"
+```
+
+
+```r
+print("Hello, Rob!")
+```
+
+```
+## [1] "Hello, Rob!"
+```
+
+Interesting

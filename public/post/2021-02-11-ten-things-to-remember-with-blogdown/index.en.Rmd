@@ -52,3 +52,5 @@ It's virtually impossible to give a comprehensive scaffold of how to accomplish 
 8. If you are using Rstudio, find the `Addins` menu and use the "add post" feature.
 
 9.  Do not change layouts in the theme directory.  Instead, copy the layouts to the `layout` folder in the root directory and add the word "custom" in the filename.
+
+10. Expanding on **9**, you customize a theme by overriding theme layouts and static assets in your top-level project directories.
