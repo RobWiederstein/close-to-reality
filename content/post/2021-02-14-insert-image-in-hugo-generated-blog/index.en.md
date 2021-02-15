@@ -1,5 +1,5 @@
 ---
-title: Insert Image in Hugo-generated Blog
+title: Insert Image in Hugo Blog
 author: Rob Wiederstein
 date: '2021-02-14'
 slug: []
